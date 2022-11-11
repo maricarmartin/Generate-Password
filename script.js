@@ -1,8 +1,11 @@
 // Assignment code here
 
-var length = Number(prompt("Enter a password length between 8 and 128")),
-  charType = prompt("Enter a character type: special, numeric, uppercase, lowercase."),
-  password = generatePassword("dsk@SiDa");
+var length = Number(prompt("Enter a password length between 8 and 128.")),
+  charType = prompt("Enter a special character."),
+  charType = prompt("Enter a numeric."),
+  charType = prompt("Enter a uppercase."),
+  charType = prompt("Enter a lowercase."),
+  password = generatePassword();
 document.getElementById("display").value = password;
 document.getElementById('copy-btn').addEventListener('click', copyPassword);
 
